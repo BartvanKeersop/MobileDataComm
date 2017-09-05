@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bartvankeersop.emailandsmscommunications">
+    //Permissions
+    <user-permission android:name="android.permissions.Internet" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.BROADCAST_SMS" />
+
+    <uses-permission android:name="android.permission.RECIEVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SmsActivity"></activity>
     </application>
 
 </manifest>
