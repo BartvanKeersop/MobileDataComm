@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidListExample</string>
+    <string name="le_addCar">Add</string>
+    <string name="le_editCar">Edit</string>
+    <string name="le_deleteCar">Delete</string>
+    <string name="le_activityCar">Activtity</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>

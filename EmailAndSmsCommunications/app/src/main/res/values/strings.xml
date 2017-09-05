@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EmailAndSmsCommunications</string>
+    <string name="esc_default_email">orancube@hotmail.com</string>
+</resources>
