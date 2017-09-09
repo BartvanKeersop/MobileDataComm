@@ -1,14 +1,18 @@
 package com.example.bartvankeersop.emailandsmscommunications;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
     }
 
     @Override
@@ -49,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnSend)
     public void sendMail(View view){
-        Intent email = new Intent(Intent.ACTION_SEND);
-        email.putExtra(Intent.EXTRA_EMAIL, new String[]{etEmail.getText().toString()});
+        Intent email = new Intent(Intent.ACTION_SENDTO,
+                Uri.parse("mailto:" + etEmail.getText().toString()));
+        
         email.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
         email.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
-        email.setType("message/rfc822");
         startActivity(Intent.createChooser(email, "Choose an Email client :"));
     }
 }
