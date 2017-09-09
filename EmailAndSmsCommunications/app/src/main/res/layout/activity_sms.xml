@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.example.bartvankeersop.emailandsmscommunications.SmsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        tools:text="Number" />
+
+    <EditText
+        android:id="@+id/etSmsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="Msg"
+        android:gravity="top"
+        />
+
+    <Button
+        android:onClick="sendSMS"
+        android:id="@+id/btnSmsSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"/>
+
+</LinearLayout>
