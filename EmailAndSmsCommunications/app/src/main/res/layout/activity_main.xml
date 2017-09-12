@@ -15,8 +15,8 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"
-        tools:text="@string/esc_default_email" />
+        android:text="@string/esc_default_email"
+        />
 
     <EditText
         android:id="@+id/etSubject"

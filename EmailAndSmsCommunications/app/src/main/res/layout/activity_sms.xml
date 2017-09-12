@@ -14,8 +14,8 @@
         android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"
-        tools:text="Number" />
+        android:text="+31637194807"
+        />
 
     <EditText
         android:id="@+id/etSmsMessage"

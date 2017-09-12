@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMail(View view){
         Intent email = new Intent(Intent.ACTION_SENDTO,
                 Uri.parse("mailto:" + etEmail.getText().toString()));
-        
+
         email.putExtra(Intent.EXTRA_SUBJECT, etSubject.getText().toString());
         email.putExtra(Intent.EXTRA_TEXT, etMessage.getText().toString());
         startActivity(Intent.createChooser(email, "Choose an Email client :"));
