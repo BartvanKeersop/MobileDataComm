@@ -1,0 +1,16 @@
+#Tue Sep 12 14:14:53 EEST 2017
+renamed.4=classes.dex
+renamed.3=classes3.dex
+renamed.2=classes4.dex
+renamed.1=classes2.dex
+base.4=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\butterknife-annotations-8.8.1_a636e1bba57f0d6bc85ff3289faa1e2b391d3812
+renamed.0=classes5.dex
+base.3=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6e6f271efd32f848deb52a7630e8fe3b835a1862
+base.2=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.0_863043093a8864a0de60dd11676a12f447e3622d
+base.1=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2111455285ca882a6d403835a50734b864c1b5bf
+base.0=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_67e9d3203bcaed80eb7a6d14a806570fbdd74a2b
+file.4=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\butterknife-annotations-8.8.1_a636e1bba57f0d6bc85ff3289faa1e2b391d3812\\classes.dex
+file.3=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6e6f271efd32f848deb52a7630e8fe3b835a1862\\classes.dex
+file.2=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.0_863043093a8864a0de60dd11676a12f447e3622d\\classes.dex
+file.1=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2111455285ca882a6d403835a50734b864c1b5bf\\classes.dex
+file.0=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_67e9d3203bcaed80eb7a6d14a806570fbdd74a2b\\classes.dex

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "fi.oamk.chatclient"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 15
     }
 
@@ -20,4 +20,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

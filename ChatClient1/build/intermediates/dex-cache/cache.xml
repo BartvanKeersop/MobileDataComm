@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bart van Keersop\.android\build-cache\fb27a6582dcc158b135b74a812ad01f9c894e019\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6e6f271efd32f848deb52a7630e8fe3b835a1862\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bart van Keersop\.android\build-cache\4eefc04fde44d0c834f70e8953ad80935d7b4040\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2111455285ca882a6d403835a50734b864c1b5bf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bart van Keersop\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_67e9d3203bcaed80eb7a6d14a806570fbdd74a2b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bart van Keersop\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_863043093a8864a0de60dd11676a12f447e3622d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b279d6c18f4ca83d7bd43360658a491303947c05">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_3b6aaa5ed041d796dc745f784182f2d315afbae6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5002414f8a9a462541cec1d0ae438be2ea8e8c31\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Bart van Keersop\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.8.1\bc373fb6bc7bca3035041b924f158fd2b946ee8d\butterknife-annotations-8.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="C:\Github\MobileDataComm\ChatClient1\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.8.1_a636e1bba57f0d6bc85ff3289faa1e2b391d3812\classes.dex" />
+    </item>
+
+</items>

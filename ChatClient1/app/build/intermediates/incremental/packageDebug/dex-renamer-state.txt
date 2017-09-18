@@ -1,0 +1,7 @@
+#Tue Sep 12 14:14:53 EEST 2017
+base.0=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3b6aaa5ed041d796dc745f784182f2d315afbae6
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5002414f8a9a462541cec1d0ae438be2ea8e8c31\\classes.dex
+base.1=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5002414f8a9a462541cec1d0ae438be2ea8e8c31
+file.0=C\:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_3b6aaa5ed041d796dc745f784182f2d315afbae6\\classes.dex

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\temp4\\ChatClient1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_chat.xml",
-        "source": "C:\\temp4\\ChatClient1\\app\\src\\main\\res\\menu\\activity_chat.xml"
-    },
-    {
         "merged": "C:\\Github\\MobileDataComm\\ChatClient1\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_chat.xml",
         "source": "C:\\Github\\MobileDataComm\\ChatClient1\\app\\src\\main\\res\\menu\\activity_chat.xml"
     }
