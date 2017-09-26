@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Github\MobileDataComm\AndroidJSONParsing1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Github\MobileDataComm\AndroidJSONParsing1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_767a017c74f152de878eeeca4b18ccce301e8cf1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Github\MobileDataComm\AndroidJSONParsing1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de048db4cf95dfb9ffb74d6ee656f3ebd6ff676">
+        <dex dex="C:\Github\MobileDataComm\AndroidJSONParsing1\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_feb7cc33307d416f53b3f7f3a369cef9e49954ae\classes.dex" />
+    </item>
+
+</items>

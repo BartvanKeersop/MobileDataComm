@@ -1,0 +1,7 @@
+#Tue Sep 26 11:08:38 EEST 2017
+base.0=C\:\\Github\\MobileDataComm\\AndroidXMLParsing2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ce984f4b3d69432ebf22892b66c65e1adaf4ac02
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Github\\MobileDataComm\\AndroidXMLParsing2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b4b6757564f24d566025ddd46ac01828ab4ce61e\\classes.dex
+base.1=C\:\\Github\\MobileDataComm\\AndroidXMLParsing2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b4b6757564f24d566025ddd46ac01828ab4ce61e
+file.0=C\:\\Github\\MobileDataComm\\AndroidXMLParsing2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_ce984f4b3d69432ebf22892b66c65e1adaf4ac02\\classes.dex
