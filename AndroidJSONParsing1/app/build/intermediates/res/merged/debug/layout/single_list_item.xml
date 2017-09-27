@@ -14,12 +14,12 @@
             android:paddingBottom="10dip"
             android:textColor="#43bd00"/>
   <!-- Description Label -->
-  <TextView android:id="@+id/email_label"
+  <TextView android:id="@+id/address_label"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="#acacac"/>
   <!-- Price Label -->
-  <TextView android:id="@+id/mobile_label"
+  <TextView android:id="@+id/ip_label"
       		android:layout_width="fill_parent"
       		android:layout_height="wrap_content"
       		android:textStyle="bold"/>

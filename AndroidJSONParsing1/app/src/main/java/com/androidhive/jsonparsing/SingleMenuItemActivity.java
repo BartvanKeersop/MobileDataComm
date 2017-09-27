@@ -9,8 +9,8 @@ public class SingleMenuItemActivity  extends Activity {
 	
 	// JSON node keys
 	private static final String TAG_NAME = "name";
-	private static final String TAG_EMAIL = "email";
-	private static final String TAG_PHONE_MOBILE = "mobile";
+	private static final String TAG_ADDRESS = "address";
+	private static final String TAG_IP = "ip";
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,16 +21,16 @@ public class SingleMenuItemActivity  extends Activity {
         
         // Get JSON values from previous intent
         String name = in.getStringExtra(TAG_NAME);
-        String cost = in.getStringExtra(TAG_EMAIL);
-        String description = in.getStringExtra(TAG_PHONE_MOBILE);
+        String address = in.getStringExtra(TAG_ADDRESS);
+        String ip = in.getStringExtra(TAG_IP);
         
         // Displaying all values on the screen
         TextView lblName = (TextView) findViewById(R.id.name_label);
-        TextView lblCost = (TextView) findViewById(R.id.email_label);
-        TextView lblDesc = (TextView) findViewById(R.id.mobile_label);
+        TextView lblAddress = (TextView) findViewById(R.id.address_label);
+        TextView lblIp = (TextView) findViewById(R.id.ip_label);
         
         lblName.setText(name);
-        lblCost.setText(cost);
-        lblDesc.setText(description);
+        lblAddress.setText(address);
+        lblIp.setText(ip);
     }
 }

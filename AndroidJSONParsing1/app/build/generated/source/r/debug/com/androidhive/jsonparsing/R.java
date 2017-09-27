@@ -14,13 +14,14 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int JSONloadingBar=0x7f050003;
-        public static final int email=0x7f050001;
-        public static final int email_label=0x7f050005;
-        public static final int mobile=0x7f050002;
-        public static final int mobile_label=0x7f050006;
+        public static final int JSONloadingBar=0x7f050004;
+        public static final int address=0x7f050001;
+        public static final int address_label=0x7f050006;
+        public static final int ip=0x7f050002;
+        public static final int ip_label=0x7f050007;
+        public static final int loadingText=0x7f050003;
         public static final int name=0x7f050000;
-        public static final int name_label=0x7f050004;
+        public static final int name_label=0x7f050005;
     }
     public static final class layout {
         public static final int list_item=0x7f030000;

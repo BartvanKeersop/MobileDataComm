@@ -31,21 +31,19 @@ import android.widget.TextView;
 public class AndroidJSONParsingActivity extends ListActivity {
 
 	ProgressBar _progressBar;
+	TextView _totalItems;
+	int _totalNumber;
 
 	// url to make request
-	private static String url = "http://api.androidhive.info/contacts/";
+	private static String url = "http://172.20.240.4:7003/";
 	
 	// JSON Node names
-	private static final String TAG_CONTACTS = "contacts";
 	private static final String TAG_ID = "id";
 	private static final String TAG_NAME = "name";
-	private static final String TAG_EMAIL = "email";
 	private static final String TAG_ADDRESS = "address";
-	private static final String TAG_GENDER = "gender";
-	private static final String TAG_PHONE = "phone";
-	private static final String TAG_PHONE_MOBILE = "mobile";
-	private static final String TAG_PHONE_HOME = "home";
-	private static final String TAG_PHONE_OFFICE = "office";
+	private static final String TAG_IP = "ip";
+
+	private static final String TAG_PORTS = "ports";
 
 	// contacts JSONArray
 	JSONArray contacts = null;
@@ -56,6 +54,7 @@ public class AndroidJSONParsingActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		_progressBar = (ProgressBar) findViewById(R.id.JSONloadingBar);
+		_totalItems = (TextView) findViewById(R.id.loadingText);
 
 		new HttpFetcher(this).execute();
 	}
@@ -85,7 +84,16 @@ public class AndroidJSONParsingActivity extends ListActivity {
 				JSONObject json = jParser.getJSONFromUrl(url);
 
 				// Getting Array of Contacts
-				contacts = json.getJSONArray(TAG_CONTACTS);
+				contacts = json.getJSONArray(TAG_PORTS);
+
+				runOnUiThread(new Runnable(){
+					@Override
+					public void run(){
+						_progressBar.setMax(contacts.length());
+					}
+				});
+
+				_totalNumber = contacts.length();
 
 				// looping through All Contacts
 				for(int i = 0; i < contacts.length(); i++){
@@ -94,15 +102,8 @@ public class AndroidJSONParsingActivity extends ListActivity {
 					// Storing each json item in variable
 					String id = c.getString(TAG_ID);
 					String name = c.getString(TAG_NAME);
-					String email = c.getString(TAG_EMAIL);
 					String address = c.getString(TAG_ADDRESS);
-					String gender = c.getString(TAG_GENDER);
-
-					// Phone number is agin JSON Object
-					JSONObject phone = c.getJSONObject(TAG_PHONE);
-					String mobile = phone.getString(TAG_PHONE_MOBILE);
-					String home = phone.getString(TAG_PHONE_HOME);
-					String office = phone.getString(TAG_PHONE_OFFICE);
+					String ip = c.getString(TAG_IP);
 
 					// creating new HashMap
 					HashMap<String, String> map = new HashMap<String, String>();
@@ -110,12 +111,12 @@ public class AndroidJSONParsingActivity extends ListActivity {
 					// adding each child node to HashMap key => value
 					map.put(TAG_ID, id);
 					map.put(TAG_NAME, name);
-					map.put(TAG_EMAIL, email);
-					map.put(TAG_PHONE_MOBILE, mobile);
+					map.put(TAG_ADDRESS, address);
+					map.put(TAG_IP, ip);
 
 					// adding HashList to ArrayList
 					contactList.add(map);
-					publishProgress((i/contacts.length()));
+					publishProgress(i);
 					}
 				} catch (JSONException e) {
 					e.printStackTrace();
@@ -125,6 +126,13 @@ public class AndroidJSONParsingActivity extends ListActivity {
 
 		protected void onProgressUpdate(Integer... progress) {
 			_progressBar.setProgress(progress[0]);
+			Log.d("---DEBUG---", progress[0].toString() + "/" + _totalNumber);
+				_totalItems.setText((progress[0].toString() + "/" + _totalNumber).toString());
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 
 		protected void onPostExecute(ArrayList<HashMap<String, String>> contactList) {
@@ -133,8 +141,8 @@ public class AndroidJSONParsingActivity extends ListActivity {
 			 * */
 			ListAdapter adapter = new SimpleAdapter(_context, contactList,
 					R.layout.list_item,
-					new String[] { TAG_NAME, TAG_EMAIL, TAG_PHONE_MOBILE }, new int[] {
-					R.id.name, R.id.email, R.id.mobile });
+					new String[] { TAG_NAME, TAG_ADDRESS, TAG_IP }, new int[] {
+					R.id.name, R.id.address, R.id.ip });
 
 			setListAdapter(adapter);
 
@@ -149,17 +157,20 @@ public class AndroidJSONParsingActivity extends ListActivity {
 										int position, long id) {
 					// getting values from selected ListItem
 					String name = ((TextView) view.findViewById(R.id.name)).getText().toString();
-					String cost = ((TextView) view.findViewById(R.id.email)).getText().toString();
-					String description = ((TextView) view.findViewById(R.id.mobile)).getText().toString();
+					String address = ((TextView) view.findViewById(R.id.address)).getText().toString();
+					String ip = ((TextView) view.findViewById(R.id.ip)).getText().toString();
 
 					// Starting new intent
 					Intent in = new Intent(getApplicationContext(), SingleMenuItemActivity.class);
 					in.putExtra(TAG_NAME, name);
-					in.putExtra(TAG_EMAIL, cost);
-					in.putExtra(TAG_PHONE_MOBILE, description);
+					in.putExtra(TAG_ADDRESS, address);
+					in.putExtra(TAG_IP, ip);
 					startActivity(in);
 				}
 			});
+
+			_progressBar.setVisibility(View.GONE);
+			_totalItems.setVisibility(View.GONE);
 		}
 	}
 }

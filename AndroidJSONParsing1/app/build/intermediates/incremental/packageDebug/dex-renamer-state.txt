@@ -1,4 +1,4 @@
-#Tue Sep 26 12:11:44 EEST 2017
+#Tue Sep 26 13:31:37 EEST 2017
 base.0=C\:\\Github\\MobileDataComm\\AndroidJSONParsing1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_767a017c74f152de878eeeca4b18ccce301e8cf1
 renamed.1=classes2.dex
 renamed.0=classes.dex

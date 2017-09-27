@@ -20,7 +20,7 @@
             android:paddingBottom="2dip" />
 		<!-- Description label -->
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/address"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="#acacac"
@@ -38,11 +38,11 @@
             android:textColor="#5d5d5d"
             android:gravity="left"
             android:textStyle="bold"
-            android:text="Mobile: " >
+            >
         </TextView>
         <!-- Price Label -->
         <TextView
-            android:id="@+id/mobile"
+            android:id="@+id/ip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#acacac" 

@@ -6,16 +6,25 @@
 	<!-- Main ListView 
 		 Always give id value as list(@android:id/list)
 	-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingText"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        android:text="TEST"
+        />
+
+    <ProgressBar
+        android:id="@+id/JSONloadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
-
-    <ProgressBar
-        android:id="@+id/JSONloadingBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true" />
 
 </LinearLayout>
